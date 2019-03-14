@@ -1,0 +1,17 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+    Layout = null;
+}
+
+<div>
+
+    <div style="border: solid 2px red; margin-left: auto; margin-right: auto; width: 400px;">
+        <div style="margin: 40px;">
+        <h1>VendWay</h1><br>
+        @foreach (String item in (ViewData["items"] as List<String>))
+        {
+            <p>@item</p>
+        }
+        </div>
+    </div>
+</div>
